@@ -29,17 +29,22 @@ def crawl(directory):
     """
     pages = dict()
 
-    for filename in os.listdir(directory):  # Take the links from the html files and put them in a dictionary
-        if filename.endswith(".html"):
-            with open(os.path.join(directory, filename)) as f:
-                contents = f.read()
-                links = re.findall(r"<a\s+(?:[^>]*?)href=\"([^\"]*)\"", contents)
-                pages[filename] = set(links) - {filename}
+    # Extract all links from HTML files
+    for filename in os.listdir(directory):
+        if not filename.endswith(".html"):
+            continue
+        with open(os.path.join(directory, filename)) as f:
+            contents = f.read()
+            links = re.findall(r"<a\s+(?:[^>]*?)href=\"([^\"]*)\"", contents)
+            pages[filename] = set(links) - {filename}
 
-    for filename in pages:  # Limit the links that redirect to other pages in the corpus
+    # Only include links to other pages in the corpus
+    for filename in pages:
         pages[filename] = set(
             link for link in pages[filename]
-            if link in pages)
+            if link in pages
+        )
+
     return pages
 
 
