@@ -72,4 +72,4 @@ The project is successful when:
 - Check the dictionaries to see if any probabilities are unreasonably high to point yourself in the right direction of what portion of the code might be breaking.
 
 ### Flowchart:
-<img src="PageRankFlowchart.png" alt="PageRankFlowchart" width="400" height="200">
+<img src="PageRankFlowchart.png" alt="PageRankFlowchart" width="1000" height="500">
