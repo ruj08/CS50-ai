@@ -70,10 +70,10 @@ Important definitions and ideas:
 ## Timeline and Steps
 ### Step 1: Crawl the Corpus
 
-Use `crawl(corpus_dir)` to:
+Use `crawl(directory)` to:
 - Read all HTML files in the folder.
 - Find links inside each file.
-- Store them in a dictionary (page → linked pages).
+- Store them in a dictionary.
 - Only count links that exist inside the corpus.
 
 ---
@@ -173,5 +173,5 @@ If something goes wrong:
 - Make sure only internal links are counted.
 - Make sure dangling pages (pages that contain no outgoing links) are handled correctly.
 - Check that probabilities add up to 1.
-- If iteration does not stop, check your formula.
+- If iteration does not stop, check the formula.
 - If sampling looks inaccurate, increase `n`.
