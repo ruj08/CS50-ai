@@ -150,7 +150,7 @@ A.html: 0.037
 B.html: 0.207
 ...
 ```
-Each number shows how important the page is compared to the others.
+##### Each number shows how important the page is compared to the others.
 ---
 
 ## 5) Files in This Folder
