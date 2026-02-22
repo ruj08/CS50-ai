@@ -68,7 +68,7 @@ Important definitions and ideas:
 ---
 
 ## Timeline and Steps
-### Step 1: Crawl the Corpus
+### Step 1: Crawl the Corpora
 
 Use `crawl(directory)` to:
 - Read all HTML files in the folder.
