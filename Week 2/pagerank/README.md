@@ -1,4 +1,4 @@
-# PageRank — CS50 AI (Week 2)
+# Software Development Learning Cycle: PageRank
 
 ## 1) Planning
 
