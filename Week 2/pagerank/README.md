@@ -140,7 +140,7 @@ Run PageRank on a corpus directory:
 
 ```bash
 python pagerank.py corpus0
-python pagerank.py "corpus's/corpus1"
+python pagerank.py "corpora/corpus1"
 ```
 
 Example output:
