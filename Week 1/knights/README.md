@@ -13,6 +13,10 @@ The program is successful when it can correctly evaluate each knowledge base and
 - No additional libraries may be imported.
 - The program must correctly solve and evaluate every puzzle.
 
+### Rules of the Game:
+- Every person is either a Knight (always tells the truth) or a Knave (always lies).
+- No one can be both, and no one can switch roles.
+- A Knight’s statement is always true; a Knave’s statement is always false.
 ---
 
 ## 2) Analysis
