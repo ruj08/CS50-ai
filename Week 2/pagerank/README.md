@@ -67,7 +67,7 @@ Important definitions and ideas:
 - All probability values must add up to 1.
 ---
 
-## Timeline and Steps
+## 3) Timeline and Steps
 ### Step 1: Crawl the Corpora
 
 Use `crawl(directory)` to:
@@ -140,7 +140,7 @@ Run PageRank on a corpus directory:
 
 ```bash
 python pagerank.py corpus0
-python pagerank.py "corpus's/corpus1"
+python pagerank.py "corpora/corpus1"
 ```
 
 Example output:
@@ -153,7 +153,7 @@ B.html: 0.207
 ##### Each number shows how important the page is compared to the others.
 ---
 
-## 5) Files in This Folder
+## 4) Files in This Folder
 - `pagerank.py` — Main program file.
 - `README.md` — This file.
 - `corpora/` — Example test folders:
@@ -163,11 +163,11 @@ B.html: 0.207
 Each corpus contains HTML pages used as input.
 
 ---
-## 6) Flowchart
+## 5) Flowchart
 <img src="PageRankFlowchart.png" alt="PageRankFlowchart" width="1000" height="500">
 ---
 
-## 7) Troubleshooting
+## 6) Troubleshooting
 
 If something goes wrong:
 - Make sure only internal links are counted.
