@@ -116,8 +116,6 @@ Several debugging strategies were used during development:
 - Checking domain reductions to ensure constraints were applied correctly
 - Testing with smaller crossword structures to verify algorithm behavior
 
-These methods helped identify issues such as incorrect overlap comparisons or domains being reduced too aggressively.
-
 ### Flowchart
 
 This is the flowchart programmed in `mermaid`:
