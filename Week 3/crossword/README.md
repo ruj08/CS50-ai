@@ -125,44 +125,41 @@ This is the flowchart programmed in `mermaid`:
 ```mermaid
 flowchart TD
 
-A([Start Program]) --> B[Create Crossword Object]
-B --> C[Call solve()]
+A([Start Program]) --> B[Create Crossword]
+B --> C[Call solve]
 
 C --> D[Enforce Node Consistency]
 D --> E[Run AC3]
 E --> F[Call backtrack with empty assignment]
 
-F --> G{Assignment Complete?}
+F --> G{Assignment complete}
 
-G -->|Yes| H[Return Assignment]
+G -->|Yes| H[Return assignment]
+G -->|No| I[Select unassigned variable]
 
-G -->|No| I[Select Unassigned Variable]
+I --> J[Order domain values]
+J --> K[Choose next value]
 
-I --> J[Order Domain Values]
-
-J --> K[Choose Next Value]
-
-K --> L{Value already used?}
+K --> L{Value already used}
 
 L -->|Yes| K
+L -->|No| M[Add value to assignment]
 
-L -->|No| M[Add Value to Assignment]
+M --> N{Assignment consistent}
 
-M --> N{Assignment Consistent?}
-
-N -->|No| O[Remove Value]
-O --> P{More Values?}
+N -->|No| O[Remove value]
+O --> P{More values available}
 
 P -->|Yes| K
 P -->|No| Q[Return None]
 
-N -->|Yes| R[Recursive backtrack call]
+N -->|Yes| R[Recursive backtrack]
 
-R --> S{Result is not None?}
+R --> S{Result is not None}
 
-S -->|Yes| T[Return Result]
+S -->|Yes| T[Return result]
+S -->|No| U[Remove value]
 
-S -->|No| U[Remove Value]
 U --> P
 ```
 
