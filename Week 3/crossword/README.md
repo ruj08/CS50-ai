@@ -120,7 +120,7 @@ These methods helped identify issues such as incorrect overlap comparisons or do
 
 ### Flowchart
 
-This is the code in `mermaid` but `flowchart.png` will be provided below:
+This is the flowchart programmed in `mermaid`:
 
 ```mermaid
 flowchart TD
