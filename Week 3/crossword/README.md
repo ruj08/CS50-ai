@@ -111,7 +111,7 @@ The following components were provided for the project:
 
 Several debugging strategies were used during development:
 
-- **Print statements** to observe domain changes and assignments
+- Print statements to observe domain changes and assignments
 - Running functions individually to isolate errors
 - Checking domain reductions to ensure constraints were applied correctly
 - Testing with smaller crossword structures to verify algorithm behavior
