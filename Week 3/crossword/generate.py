@@ -97,10 +97,10 @@ class CrosswordCreator():
         """
         Update `self.domains` such that each variable is node-consistent.
         (Remove any values that are inconsistent with a variable's unary
-         constraints; in this case, the length of the word.)
+         constraints; in this case, the length of the word.) 
         """
-        for var in self.domains:
-            for word in self.domains[var].copy():
+        for var in self.domains:  
+            for word in self.domains[var].copy():  
                 if len(word) != var.length:
                     self.domains[var].remove(word)
 
@@ -240,10 +240,13 @@ class CrosswordCreator():
             return assignment
         var = self.select_unassigned_variable(assignment)
         for value in self.order_domain_values(var, assignment):
+            if value in assignment.values():
+                continue
             assignment[var] = value
-            result = self.backtrack(assignment)
-            if result is not None:
-                return result
+            if self.consistent(assignment):
+                result = self.backtrack(assignment)
+                if result is not None:
+                    return result
             del assignment[var]
         return None     
 
