@@ -160,5 +160,3 @@ R -->|Yes| M
 R -->|No| S[Return Failure]
 ```
 
-![flowchart.png](mermaid-diagram (1).png)
-
